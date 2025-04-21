@@ -76,6 +76,8 @@ const Home = () => {
               transactions={dashboardData?.recentTransactions}
               onSeeMore={() => navigate("/expense")}
             />
+
+            
           </div>
         </div>
       </DashboardLayout>

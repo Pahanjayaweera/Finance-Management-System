@@ -1,12 +1,15 @@
-import React from 'react'
+import React from 'react';
+import { useUserAuth } from '../../hooks/useUserAuth';
+import DashboardLayout from '../../components/layouts/DashboardLayout';
 
-const Expenses = () => {
+const Expense = () => {
+useUserAuth();
+
   return (
-    <div>
-      Expenses
-    </div>
-  )
-}
+    <DashboardLayout activeMenu="Expense">
+        <div className="mt-5 mx-auto"></div>
+    </DashboardLayout>
+  );
+};
 
-export default Expenses
-
+export default Expense;

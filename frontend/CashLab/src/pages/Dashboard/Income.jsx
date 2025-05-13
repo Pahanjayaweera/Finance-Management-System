@@ -21,7 +21,6 @@ const Income = () => {
   });
   const [openAddIncomeModal, setOpenAddIncomeModal] = useState(false)
 
-
   //Get All Income Details
   const fetchIncomeDetails = async () => {
     if (loading) return;
@@ -83,7 +82,7 @@ const Income = () => {
   };
 
   //Delete Income
-  const deleteAddIncome = async (id) => {
+  const deleteIncome = async (id) => {
     try {
       await axiosInstance.delete(API_PATHS.INCOME.DELETE_INCOME(id));
 
@@ -142,7 +141,7 @@ const Income = () => {
           >
             <DeleteAlert
               content="Are you sure you want to delete this income details"
-              onDelete={() => deleteAddIncome(openDeleteAlert.data)}
+              onDelete={() => deleteIncome(openDeleteAlert.data)}
             />
           </Modal>
         </div>

@@ -30,6 +30,6 @@ import {
         id: "06",
         label: "Logout",
         icon: LuLogOut,
-        path: "/logout", 
+        path: "logout", 
     },
  ];

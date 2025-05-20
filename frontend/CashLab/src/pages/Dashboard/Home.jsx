@@ -46,13 +46,11 @@ const Home = () => {
 
   useEffect(() => {
     fetchDashboardData();
-    return () => {};
   }, []);
 
   return (
-    <div>
       <DashboardLayout activeMenu="Dashboard">
-        <div className="mt-5 mx-auto">
+        <div className="my-5 mx-auto">
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
             <InfoCard
               icon = {<IoMdCard/>}
@@ -110,7 +108,6 @@ const Home = () => {
           </div>
         </div>
       </DashboardLayout>
-    </div>
   );
 };
 
